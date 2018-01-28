@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Budgeter</title>
+	<link rel="stylesheet" type="text/css" href="CSS/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body id="wrapper">
+
+	<div id="budgetItemHldr"  style="display: none;">
+		<div class="tableRow">
+			<div class="tableCell">Category</div>
+			<div class="tableCell">Budget</div>
+			<div class="tableCell">Actual</div>
+			<div class="tableCell">Difference</div>
+			<div class="tableCell">Month</div>
+			<div class="tableCell">Notes</div>
+			<div class="tableCell">
+				<i class="fa fa-pencil" aria-hidden="true"></i>
+				<i class="fa fa-trash-o" aria-hidden="true"></i>
+			</div>
+		</div>
+	</div>
+
+	<div id="loginRegisterContainer" style="display: none;">
+		<!-- <span class="title" style="width: 100%; font-size: 30px;">You Can...</span> -->
+		<div class="half-box">
+			<span class="title" style="width: 100%; text-decoration: underline;">Register</span>
+			<input id="firstName" placeholder="First Name"> <br>
+			<input id="lastName" placeholder="Last Name"> <br>
+			<input id="emailRegister" placeholder="Email"> <br>
+			<input id="passwordRegister" placeholder="Password"> <br>
+			<button id="createUserButton">Register</button>
+		</div>
+		<div class="half-box">
+			<span class="title" style="width: 100%; text-decoration: underline;">Login</span>
+			<input id="emailLogin" placeholder="Email"> <br>
+			<input id="passwordLogin" placeholder="Password"> <br>
+			<button id="loginButton">Login</button>
+		</div>
+		
+		
+	</div>
+
+	<div id="createBudgetItemContainer" style="display: none;">
+		<span class="title">Budget Item</span>
+		<input id="category" placeholder="Category"> <br>
+		<input id="budget" placeholder="Budget"> <br>
+		<input id="actual" placeholder="Actual"> <br>
+		<input id="difference" placeholder="Difference"> <br>
+		<input id="month" placeholder="Month"> <br>
+		<textarea id="notes" placeholder="Notes"></textarea> <br>
+		<button id="createBudgetItem">Create</button>
+	</div>
+	<script src="js/app.js" type="text/javascript"></script>
+
+</body>
+</html>
